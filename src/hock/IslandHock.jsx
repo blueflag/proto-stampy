@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
 import type {Element} from 'react';
-import Hock from 'stampy/lib/util/Hock';
+import Hock from '../util/Hock';
 import debounce from 'debounce';
 
 type Config = {

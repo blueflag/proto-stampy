@@ -1,5 +1,6 @@
 // @flow
 import React from 'react';
+import type {Element} from 'react';
 import Hock from '../util/Hock';
 
 type Config = {
@@ -12,8 +13,8 @@ type Props = {
 
 type State = {
     blocked: boolean,
-    nextLocation: Object,
-    action: string
+    nextLocation: ?Object,
+    action: ?string
 };
 
 type ChildProps = {
@@ -60,7 +61,7 @@ export default Hock({
             };
 
             continueNavigation = () => {
-                this.unblockRouteChange();
+                this.unprotectRouteChange();
 
                 let {history} = this.props;
 
@@ -77,7 +78,7 @@ export default Hock({
                     POP: () => history.goBack()
                 };
 
-                actionMap[action] && actionMap[action]();
+                action && actionMap[action] && actionMap[action]();
             };
 
             protectRouteChange = () => {

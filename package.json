@@ -60,7 +60,7 @@
     "debounce": "^1.1.0",
     "immutable": "^3.8.1",
     "react": "^15.x.x",
-    "react-modal": "^2.2.4",
+    "react-modal": "^2.2.4"
   },
   "dependencies": {
     "classnames": "^2.2.5"

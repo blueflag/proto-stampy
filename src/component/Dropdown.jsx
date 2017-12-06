@@ -1,9 +1,9 @@
 // @flow
 import React from 'react';
 import type {ComponentType, Element} from 'react';
-import Compose from 'stampy/lib/util/Compose';
-import SpruceClassName from 'stampy/lib/util/SpruceClassName';
-import StateHock from 'stampy/lib/hock/StateHock';
+import Compose from '../util/Compose';
+import SpruceClassName from '../util/SpruceClassName';
+import StateHock from '../hock/StateHock';
 
 /**
  * @module Components
@@ -94,8 +94,7 @@ export default class Dropdown extends React.Component<Props> {
                     {schema.map((schemaItem: Object, key: number): Element<*> => {
                         const {
                             render: Render,
-                            onClick,
-                            active
+                            onClick
                         } = schemaItem;
 
                         const itemClick = () => {
