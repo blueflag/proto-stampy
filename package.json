@@ -4,7 +4,7 @@
   "description": "The new and improved proto-stampy",
   "repository": {
     "type": "git",
-    "url": "git@github.com:bigdatr/proto-stampy.git"
+    "url": "git@github.com:blueflag/proto-stampy.git"
   },
   "license": "MIT",
   "scripts": {
